@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Task } from './Task';
 
@@ -12,7 +11,11 @@ export default {
   },
 };
 
-const Template = (args) => <Task {...args} />;
+const Template = (args) => (
+  <ul>
+    <Task {...args} />
+  </ul>
+);
 
 export const Default = Template.bind({});
 Default.args = {
